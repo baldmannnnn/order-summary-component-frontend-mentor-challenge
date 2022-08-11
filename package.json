@@ -1,7 +1,7 @@
 {
   "name": "order-summary-component",
   "version": "1.0.0",
-  "description": "",
+  "description": "Order summary component challenge from frontend mentor",
   "source": "./src/index.html",
   "scripts": {
     "dev": "parcel"

@@ -4,11 +4,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $clr-primary-100 url('../images/pattern-background-desktop.svg')
-    no-repeat top center;
+  background: $clr-primary-100;
   font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../images/pattern-background-mobile.svg') no-repeat;
+  background-position-x: 0;
+  background-position-y: bottom 5rem;
+  background-size: cover;
+  height: 40vh;
+  z-index: -1;
+  width: 100vw;
+
+  @media screen and (min-width: 37.5rem) {
+    background: url('../images/pattern-background-desktop.svg') no-repeat;
+    background-position-x: right;
+    background-position-y: bottom 1.25rem;
+    height: 50vh;
+    background-size: cover;
+  }
 }
 
 main {
-  width: clamp(300px, 87.2%, 1200px);
+  width: clamp(18.75rem, 87.2%, 28.125rem);
 }

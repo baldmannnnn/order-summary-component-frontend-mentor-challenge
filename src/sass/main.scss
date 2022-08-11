@@ -1,5 +1,6 @@
-@use './abstracts/variables';
-@use './base/reset';
-@use './layout/layout';
+@use './abstracts/' as *;
+@use './base/' as *;
+@use './components/' as *;
+@use './layout/' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');

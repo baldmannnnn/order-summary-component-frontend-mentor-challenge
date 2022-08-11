@@ -1,0 +1,70 @@
+@use '../abstracts/variables' as *;
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  gap: 1.25rem;
+  background-color: $clr-neutral-100;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.6875rem;
+
+  @media screen and (min-width: 37.5rem) {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+.plan__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+
+  @media screen and (min-width: 37.5rem) {
+    justify-content: space-between;
+  }
+}
+.plan__name {
+  font-size: 0.875rem;
+  font-weight: $fw-900;
+  line-height: 1.1575rem;
+  color: $clr-neutral-500;
+
+  @media screen and (min-width: 37.5rem) {
+    font-size: 1rem;
+  }
+}
+
+.plan__price {
+  font-size: 0.875rem;
+  color: $clr-neutral-300;
+
+  @media screen and (min-width: 37.5rem) {
+    font-size: 1rem;
+  }
+}
+.plan__btn {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-family: inherit;
+  border: 0;
+  background: transparent;
+  text-decoration: underline;
+  color: $clr-primary-500;
+  font-weight: $fw-700;
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+  &:hover {
+    color: $clr-primary-300;
+  }
+
+  @media screen and (min-width: 37.5rem) {
+    font-size: 0.875rem;
+  }
+}

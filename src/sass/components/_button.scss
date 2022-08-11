@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+
+.btn {
+  display: block;
+  width: 100%;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  font-family: inherit;
+  font-weight: $fw-900;
+  font-size: 0.9375rem;
+  border-radius: 0.6875rem;
+  border: 0;
+  line-height: 1.4;
+  box-shadow: $box-shadow;
+  color: #fff;
+  background-color: $clr-primary-500;
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+  &:hover {
+    background-color: $clr-primary-300;
+  }
+
+  @media screen and (min-width: 37.5rem) {
+    font-size: 0.9375rem;
+  }
+}
+
+.btn--transparent {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  color: $clr-neutral-300;
+  margin-top: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0.75rem;
+
+  &:hover {
+    background-color: transparent;
+    color: $clr-neutral-500;
+  }
+
+  @media screen and (min-width: 37.5rem) {
+    margin-top: 2rem;
+  }
+}

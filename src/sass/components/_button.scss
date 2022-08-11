@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/' as *;
 
 .btn {
   display: block;
@@ -10,7 +10,7 @@
   font-size: 0.9375rem;
   border-radius: 0.6875rem;
   border: 0;
-  line-height: 1.4;
+  line-height: 1.25rem;
   box-shadow: $box-shadow;
   color: #fff;
   background-color: $clr-primary-500;
